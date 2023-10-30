@@ -20,6 +20,11 @@ config :propaganda_machine, PropagandaMachineWeb.Endpoint,
   pubsub_server: PropagandaMachine.PubSub,
   live_view: [signing_salt: "cjD4ubST"]
 
+  config :propaganda_machine, PropagandaMachine.Repo,
+  database: "propaganda_machine_dev",
+  username: "alejandrodiaz",
+  hostname: "localhost",
+  pool_size: 10
 # Configures the mailer
 #
 # By default it uses the "Local" adapter which stores the emails

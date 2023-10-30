@@ -16,6 +16,8 @@ defmodule PropagandaMachineWeb.Router do
 
   scope "/", PropagandaMachineWeb do
     pipe_through :browser
+    resources "/messages", MessageController
+
 
     get "/", PageController, :home
   end
