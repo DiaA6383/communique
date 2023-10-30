@@ -2,13 +2,14 @@ import Config
 
 # Configure your database
 config :propaganda_machine, PropagandaMachine.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "alejandrodiaz",
+  # password: "your_password_here_if_needed",
   hostname: "localhost",
   database: "propaganda_machine_dev",
   stacktrace: true,
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
+
 
 # For development, we disable any cache and enable
 # debugging and code reloading.

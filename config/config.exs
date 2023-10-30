@@ -21,10 +21,12 @@ config :propaganda_machine, PropagandaMachineWeb.Endpoint,
   live_view: [signing_salt: "cjD4ubST"]
 
   config :propaganda_machine, PropagandaMachine.Repo,
-  database: "propaganda_machine_dev",
   username: "alejandrodiaz",
+  database: "propaganda_machine_dev",
   hostname: "localhost",
+  show_sensitive_data_on_connection_error: true,
   pool_size: 10
+
 # Configures the mailer
 #
 # By default it uses the "Local" adapter which stores the emails
